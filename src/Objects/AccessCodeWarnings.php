@@ -10,7 +10,7 @@ class AccessCodeWarnings
             return null;
         }
         return new self(
-            message: $json->message,
+            message: $json->message ?? null,
             warning_code: $json->warning_code,
             created_at: $json->created_at ?? null
         );
